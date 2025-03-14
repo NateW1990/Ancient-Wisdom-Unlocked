@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ancient Wisdom Unlocked – Explore rare, hidden, and esoteric historical knowledge.">
+    <title>Ancient Wisdom Unlocked</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Ancient Wisdom Unlocked</h1>
+        <p>The Gateway to Lost & Esoteric History</p>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <nav id="mobile-menu">
+        <ul>
+            <li><a href="#hero" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+            <li><a href="#instagram" onclick="toggleMenu()">Instagram</a></li>
+            <li><a href="#gallery" onclick="toggleMenu()">Multimedia</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <h2>Unlock the Mysteries of the Ancient World</h2>
+        <p>Journey into the forgotten past and explore hidden truths lost to time.</p>
+        <button onclick="scrollToSection('blog')">Explore Mysteries</button>
+        <button onclick="openInstagram()">Follow Us on Instagram</button>
+        <button onclick="subscribe()">Subscribe for Exclusive Insights</button>
+    </section>
+
+    <section id="blog">
+        <h2>The Vault of Lost Knowledge</h2>
+        <p>Rare explorations of ancient mysteries, esoteric wisdom, and lost civilizations.</p>
+        <div class="filters">
+            <button onclick="filterCategory('civilizations')">Lost Civilizations</button>
+            <button onclick="filterCategory('forbidden')">Forbidden Knowledge</button>
+            <button onclick="filterCategory('texts')">Ancient Texts & Symbols</button>
+            <button onclick="filterCategory('cosmic')">Astronomical & Cosmic Knowledge</button>
+        </div>
+    </section>
+
+    <section id="instagram">
+        <h2>Live Archive of Esoteric Knowledge</h2>
+        <div id="insta-feed"></div>
+    </section>
+
+    <section id="gallery">
+        <h2>Multimedia Library</h2>
+        <div class="gallery">
+            <img src="artifact1.jpg" alt="Ancient Artifact">
+            <img src="symbol1.jpg" alt="Sacred Symbol">
+            <img src="ancient_site.jpg" alt="Historical Site">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact & Community</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ancient Wisdom Unlocked. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
